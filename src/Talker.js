@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from './Button';
+import { Example } from './Example';
 
 export class Talker extends React.Component {
   talk() {
@@ -11,6 +12,11 @@ export class Talker extends React.Component {
   }
 
   render() {
-    return <Button talk={this.talk} />;
+    return (
+      <div>
+        <Button talk={this.talk} />
+        <Example />
+      </div>
+    );
   }
 }
